@@ -21,8 +21,8 @@ st.markdown("Confronto tra lo scenario **2022 (Shock Ucraina)** e lo scenario **
 
 # Funzione per simulare caricamento dati FRED (in produzione usare fredapi)
 def get_mock_data():
-    dates_2022 = pd.date_range('2022-02-01', periods=24, freq='M')
-    dates_2026 = pd.date_range('2025-01-01', periods=16, freq='M')
+    dates_2022 = pd.date_range('2022-02-01', periods=24, freq='MS')
+    dates_2026 = pd.date_range('2025-01-01', periods=16, freq='MS')
     return dates_2022, dates_2026
 
 d22, d26 = get_mock_data()
